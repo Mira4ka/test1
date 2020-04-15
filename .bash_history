@@ -184,3 +184,73 @@ git remote add origin fatal: 'origin' does not appear to be a git repository
 fatal: Не удалось прочитать из внешнего репозитория.
 git remote add origin https://github.com/Mira4ka/2-task-.git
 git push -u origin master
+git clone https://github.com/Mira4ka/2-task.git
+echo "# 2-task" > 2task.tex
+git init
+git add 2task.tex
+git commit -m 'Initial Commit'
+git config user.email "buslova.kristina@mail.ru"
+git config user.name "Mira4ka"
+git remote add origin https://github.com/Mira4ka/2-task.git
+git push -u origin master
+git init 
+git add .
+git commit -m "first commit"
+git push -u origin master
+git clone https://github.com/Mira4ka/2-task.git
+echo "# 2-task" > 2task.tex
+git init
+git add 2task.tex
+git commit -m "first commit"
+git remote add origin https://github.com/Mira4ka/2-task.git
+git push -u origin master
+mkdir 2-task
+cd 2-task/
+ls
+git clone https://github.com/Mira4ka/2-task.git
+echo "# 2-task" > 2task.tex
+git add 2task.tex
+git commit
+git config user.email "buslova.kristina@mail.ru"
+git config user.name "Mira4ka"
+git push origin master
+git init 
+git add .
+git commit -m 'Initial Commit'
+git push origin master
+mkdir 3-task
+cd 3-task/
+gin clone https://github.com/Mira4ka/3-task.git
+git clone https://github.com/Mira4ka/3-task.git
+echo "# 3-task" > 3task.tex
+git add 3task.tex
+git commmit
+git commit
+git clone https://github.com/Mira4ka/3-task.git
+echo "# 3-task" > 3task.tex
+git add 3task.tex
+git commit
+git clone /home/Владимир/3-task/3task.tex
+echo "# 3-task" > 3task.tex
+git add 3task.tex
+git commit
+mkdir 3-task
+git clone /home/Владимир/3-task/3task.tex
+echo "# 3-task" > 3task.tex
+git add 3task.tex
+git commit
+git clone /home/Владимир/3-task/3task.tex
+echo "# 3-task" > 3task.tex
+git init
+git add 3task.tex
+git commit -m "first commit"
+git remote add origin /home/Владимир/3-task/3task.tex
+git push -u origin master
+echo "# 3-task" > 3task.tex
+git init
+git add 3task.tex
+git commit -m "first commit"
+git remote add origin /home/Владимир/3-task/3task.tex
+git push -u origin master
+git commit -m 'Initial Commit'
+git push -u origin master

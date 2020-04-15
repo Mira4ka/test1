@@ -1,1 +1,68 @@
-# 3-task
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+\newenvironment{Proof}
+  {\par{\bf Доказательство.}}
+  
+
+\begin{document}
+
+\begin{center}
+    \S6. {\bf Гладкая задача без ограничений} 
+\end{center}
+
+\begin{Proof}
+   Возьмем произвольный, но фиксированный элемент $ h \in X $. Рассмотрим функцию $ \varphi(\lambda) = f({\hat x} +
+   {\lambda}h) $. Поскольку  $ {\hat x} \in locextr \hspace{2pt} f $, то  $ 0 \in {\locextr \varphi} $ - локальный экстремум функции $ \varphi $. По теореме Ферма для функций одной переменной $ \varphi_{\lambda}' = 0 $. По определению вариации по Лагранжу это эквивалентно тому, что $ {\delta}f(\hat x,\hspace{2pt}h) = 0 $. В силу произвольности 
+   $ h \hspace{5pt} {\delta}f(\hat x,\hspace{2pt}h) = 0 \hspace{5pt}{\forall h} \in X $.
+   
+   Если функционал $ f $ дифференцируем по Фреше в точке $ \hat x $, то в этой точке он имеет вариацию по Лагранжу и 
+   $ f'(\hat x)[h] = {\delta}f(\hat x,\hspace{2pt}h) $. Поскольку из уже доказанного следует, что эта вариация 
+   ${\delta}f(\hat x,\cdot) = 0 $, то и $ f'(\hat x) = 0 $ в силу определения дифференцируемости по Фреше. 
+   {\hfill$\scriptstyle\blacksquare$}
+\end{Proof}
+
+\begin{center}
+    {\large\bf 6.3. Необходимые и достаточные условия II порядка}
+\end{center}
+
+{\bf  Теорема 2.} {\it Пусть функционал $ f \in D^2(\hat x) $ дважды дифференцируем по Фреше в точке $ \hat x $.}
+
+{\bf Необходимые условия экстремума:} {\it если $ \hat x \in locmin \hspace{2pt}(max) \hspace{2pt}f $, то}
+\[
+  f'(\hat x) = 0, \hspace{10pt} f"(\hat x)[h,h] \geqslant 0 \hspace{10pt} (f"(\hat x)[h,h] \leqslant 0) \hspace{10pt}{\forall h} \in X.
+\]
+
+{\bf Достаточные условия экстремума:} {\it если $ f'(\hat x) = 0 $ и }
+\[
+  f"(\hat x)[h,h] \geqslant \alpha \|h\|^2 \hspace{10pt} (f"(\hat x)[h,h] \leqslant -\alpha \|h\|^2) \hspace{10pt} 
+  {\forall h} \in X \tag{\ast} 
+\]
+{\it при некотором $ \alpha > 0 $, то $ \hat x \in locmin \hspace{2pt}(max) \hspace{2pt}f $.}
+
+\begin{Proof}
+  По формуле Тейлора 
+  \[
+    f(\hat x+h) = f(\hat x) + f'(\hat x)[h] + \frac{1}{2}f"(\hat x)[h,h] + r(h), \hspace{10pt} r(h) = o(\|h\|^2).
+  \]
+  Докажем теорему для случая минимума. Случай максимума аналогичен. 
+ 
+  {\it Необходимость.} Поскольку $ \hat x \in locmin \hspace{2pt}f $, то, во-первых, по теореме \\ Ферма $ f'(\hat x) = 0 $, во-вторых, $ f(\hat x+\lambda h) - f(\hat x) \geqslant 0 $ при достаточно малых $ \lambda $. Поэтому в силы формулы Тейлора
+  \[
+    f(\hat x+\lambda h) - f(\hat x) = \frac{\lambda^2}{2}f"(\hat x)[h,h] + r(\lambda h) \geqslant 0 \hspace{10pt} (r(\lambda h) = o(|\lambda|^2))
+  \]
+  при малых $\lambda$. Разделим обе части неравенства на $\lambda^2$ и устремим $\lambda$ к нулю. Поскольку 
+  $ \displaystyle\frac{r(\lambda h)}{\lambda^2} \rightarrow 0 $, то отсюда 
+  \[
+    f"(\hat x)[h,h] \geqslant 0 \hspace{10pt}{\forall h} \in X.
+  \]
+  
+  {\it Достаточность.} Так как $ f'(\hat x) = 0 $, то по формуле Тейлора в силу заданного условия $ f"(\hat x)[h,h] \geqslant \alpha \|h\|^2 $ имеем: 
+  \[
+    f(\hat x + h) - f(\hat x) = \frac{1}{2}f"(\hat x)[h,h] + r(h) \geqslant \frac{\alpha}{2}\|h\|^2 + r(h) \geqslant 0
+  \]
+\end{Proof}  
+\end{document}
